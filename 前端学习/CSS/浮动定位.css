@@ -1,0 +1,61 @@
+/* 
+    float定位：
+        right left none
+        可以与span结合形成首字母向右浮动的效果
+    clear清楚浮动：
+        clear：left 该元素左侧不允许有浮动
+        left right both none
+*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-size: 14px;
+}
+#container{
+    margin: 0 auto;
+    width: 1000px;
+    height: 500px;
+    /* background-color: lightcyan; */
+
+}
+#header{
+    height: 100px;
+    background-color: lightseagreen;
+    margin-bottom: 5px;         /* 距离下面main元素的边距 */   
+}
+#nav{
+    height: 20px;
+    background-color: lightyellow;
+    margin-bottom: 5px;
+}
+#main{
+    height: 500px;
+    /* background-color: lightseagreen; */
+    margin-bottom: 5px;
+}
+#aside{
+    float: left;
+    width: 300px;
+    height: 500px;
+    background-color: lightsalmon;
+    margin-right: 5px;
+}
+#content{
+    float: left;
+    width: 590px;
+    height: 500px;
+    background-color: rgb(175, 253, 230);
+    margin-right: 5px;
+}
+#right{
+    float: right;
+    width: 100px;
+    height: 500px;
+    background-color: rgb(242, 255, 196);
+}
+#footer{
+    height: 100px;
+    background-color: lightseagreen;
+}

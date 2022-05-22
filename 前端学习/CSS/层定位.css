@@ -1,0 +1,40 @@
+/* 
+    position 属性规定应用于元素的定位方法的类型
+        static
+            元素还是文档流 不会受到相关属性的影响
+        relative
+            相对于其正常位置进行定位
+            不会对其余内容进行调整来适应元素留下的任何空间
+        fixed
+            相对于视口定位的，这意味着即使滚动页面，它也始终位于同一位置
+            top  bottom  left  right
+        absolute
+            相对于最近的定位祖先元素进行定位
+            如果绝对定位的元素没有祖先，它将使用文档主体（body），并随页面滚动一起移动
+            会对元素原有位置进行删除
+    z-index 设置图层关系
+        z-index的值越小越靠底 越大越靠顶
+*/
+div{
+    text-align: center;
+    margin-bottom: 10px;
+    border: black 3px solid;
+}
+#one{
+    position: static;
+}
+#two{
+    position: fixed;
+    right: 20px;
+    top: 40px;
+}
+#three{
+    position: relative;
+    left: 30px;
+    top: 70px;
+}
+#four{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}

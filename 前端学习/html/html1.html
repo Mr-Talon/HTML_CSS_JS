@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>实验网站</title>
+    </head>
+    <!--注释的格式是！加一对两个减号-->
+    <body>
+        <h1>
+            我的第一个标题  
+        </h1>
+        <h2>这是标题</h2>
+        <h3>
+            this is head
+        </h3>
+        <!--标题的标签是<h></h>-->
+        
+        <hr/>
+        <!--<hr/>标签用于生成水平分割线-->
+        
+        <p>
+            我的第一个段落<br/><br/>
+            空格的使用：&nbsp;&nbsp;两个空格
+        </p>
+        <p>this is another paragraph</p>
+        <!--段落的标签是<p></p>-->
+        <!--一个<br/>标签用于换行 多个就可以显示空行     &nbsp;是用于显示一个空格的-->
+
+        <hr/>
+
+        <pre>
+            #include<iostream>
+            using namespace std;
+            class{
+
+            }
+            int main ();
+        </pre>
+        <!-- <pre>标签可以显示预留的格式 如上述程序代码对于格式的要求比较高 是用换行和空格控制格式比价繁琐就可以使用pre标签-->
+        
+        <p>最新<span>人口地图</span>调查</p>
+        <!--<span>标签可以和css结合 对于文字的样式进行修改-->
+        
+        <hr/>
+        
+        <a href="http://www.baidu.com">this is a link to baidu</a>  
+        <!--链接的标签是<a></a>-->
+        
+        <br/>
+        <!--<br/>标签用于定义换行-->
+        
+        <hr/>
+
+        <img src="../image/DJI_0835.jpg" width="1000" height="800"/>
+        <!--图片的标签比较特殊 它不是成对出现的-->
+
+        <!--图片的路径问题
+            1、*.html 文件跟 *.jpg 文件(f盘)在不同目录下：(不在同一个包里 需要使用绝对路径 不推荐)
+            <img src="file:///f:/*.jpg" width="300" height="120"/>
+            
+            2、*.html 文件跟 *.jpg 图片在相同目录下：（直接将图片名赋值  一般不会这么整理网站文件）  
+            <img src="*.jpg" width="300" height="120"/>
+            
+            3、*.html 文件跟 *.jpg 图片在不同目录下：
+            a、图片 *.jpg 在 image 文件夹中，*.html 跟 image 在同一目录下： （html文件没有在一个和image文件夹同级的文件夹中而是散装放置）
+             <img src="image/*.jpg/"width="300" height="120"/>           
+             b、图片 *.jpg 在 image 文件夹中，*.html 在 connage 文件夹中，image 跟 connage 在同一目录下：(比较合理的整理方法)
+            <img src="../image/*.jpg/"width="300" height="120"/>
+            
+            4、如果图片来源于网络，那么写绝对路径：
+            <img src="http://static.runoob.com/images/runoob-logo.png" width="300" height="120"/>
+        -->
+
+        <!--  html语言中路径的表示方法：
+            ./：代表文件所在的目录（可以省略不写）如果写成image/background就相当于是在html文件下找image文件夹，当然是找不到的
+            ../：代表文件所在的父级目录
+            ../../：代表文件所在的父级目录的父级目录
+            /：代表文件所在的根目录
+        -->
+    </body>
+</html>

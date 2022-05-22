@@ -1,0 +1,17 @@
+/* 
+    背景设置：
+    1、background-color 属性指定元素的背景色
+    2、opacity 属性指定元素的不透明度/透明度
+    3、background-image 属性指定用作元素背景的图像
+        内使用URL函数来显示图片
+    4、background-repeat用于背景的重复
+        repeat-x 水平重复  repeat-y 垂直重复  no-repeat
+    5、background-position 属性用于指定背景图像的位置
+    6、background-attachment 属性指定背景图像是应该滚动还是固定的
+*/
+div{
+    background-image: url("../image/_MG_5901.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}

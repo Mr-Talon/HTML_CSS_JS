@@ -1,0 +1,52 @@
+/*
+    选择器的类别：
+    1、标签选择器   html的标签作为选择器
+    2、类别选择器   以.开头设置类别  注意：类名不能以数字开头
+    3、id选择器     以#开头设置id  注意：id 名称不能以数字开头
+    4、通用选择器   以*开头可以对所有html元素进行影响
+    5、选择器嵌套span   以选择器空格隔开+span
+    6、集体声明     不同的标签之间用，隔开
+
+    组合器：
+    选择器	            示例	        示例描述
+    element element	    div p	        选择 <div> 元素内的所有 <p> 元素。
+    element>element	    div > p	        选择其父元素是 <div> 元素的所有 <p> 元素。
+    element+element	    div + p	        选择所有紧随 <div> 元素之后的 <p> 元素。
+    element1~element2	p ~ ul	        选择前面有 <p> 元素的每个 <ul> 元素。
+*/
+/*标签选择器*/
+body{
+    background-color: black;
+}
+p{
+    text-align: center;
+}
+/* 类别选择器 */
+.one{
+    color: rgb(239, 130, 160);
+    text-align: center;
+    font-size: 20px;
+}
+.two{
+    color: lightblue;
+    text-align: center;
+    font-size: 10px;
+}
+/* id选择器 */
+#three{
+    color: lightcoral;
+    text-align: center;
+}
+/* 通用选择器 */
+*{
+    text-align: center;
+    color: white;
+}
+/* 选择器嵌套 */
+p span{
+    color: red;
+}
+/* 集体声明 */
+h2,h3{
+    color: lightgreen;
+}

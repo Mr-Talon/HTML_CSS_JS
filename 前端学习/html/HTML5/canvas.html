@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1、创建 Canvas 元素
+           设置宽度和高度 注意没有px
+        2、
+     -->
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+</body>
+<script>
+    var canvas, pen   //声明画布变量和画笔变量
+    canvas = document.getElementById("myCanvas");  //画布获取html中的画布
+    pen = canvas.getContext("2d");    //上下文环境（理解为画笔）进行2d绘图
+
+    pen.moveTo(20, 20);
+    pen.lineTo(100, 50);
+    pen.stroke();   //绘制函数
+</script>
+
+</html>

@@ -1,0 +1,37 @@
+.button1{
+    border-radius: 5px;
+    background-color: rgba(22, 22, 22, 0.89);
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    font-size: 25px;
+    transition: all 0.3s;
+    margin: 5px;
+    cursor: pointer;
+}
+/* 设置按钮的样式 */
+.button1 span{
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+/* 设置按钮的内容 因为存在位移 所以设定positive*/
+.button1 span::after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+/* 设置出现的箭头  \00bb为箭头 */
+.button1:hover span{
+    padding-right: 25px;
+}
+/* 设置鼠标悬停时 按钮内容向左移动 */
+.button1:hover span::after{
+    opacity: 1;
+    right: 0;
+}

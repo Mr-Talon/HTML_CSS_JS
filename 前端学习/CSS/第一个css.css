@@ -1,0 +1,11 @@
+p{
+    color: white;  /*注释的添加方法*/
+    text-align:center;  
+}
+body{
+    background-color: black;
+}
+
+/*css样式的优先级 根据就近原则
+行内样式>内嵌样式>外部样式>默认样式
+*/

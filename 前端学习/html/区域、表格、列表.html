@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>区域、列表、表格</title>
+</head>
+
+<body>
+    <!--
+        区域部分：
+    -->
+    <div align="center" id="container">
+        <div>
+            <p>融媒体中心|视觉设计部</p>
+        </div>
+        <div>
+            <hr />
+            <h1>ps/lr教程</h1>
+            <p>魔法课</p>
+            <h1>pr教程</h1>
+            <p>剪辑课</p>
+        </div>
+    </div>
+    <!--
+        列表部分：
+            无序列表 ul标签  li为其中的列表项 type属性 disc circle square
+            有序列表 ol标签  start属性 设置起始数字 type属性 A a I i（罗马数字）
+    -->
+    <div align="center">
+        <h3>融媒体中心|视觉设计部</h3>
+        <ul>
+            <li>ps/lr</li>
+            <li>pr</li>
+            <li>摄影</li>
+        </ul>
+        <ol start="20">
+            <li>ps/lr</li>
+            <li>pr</li>
+            <li>摄影</li>
+        </ol>
+        <!--
+            表格部分：
+                table 表格标签
+                tr （table raw）行标签
+                td （table data）列标签
+                th 表头 内容会加粗显示
+                caption 表格标题
+                colspan rowspan 合并单元格子
+                表格内的可以是文字等任何html元素
+                cellpadding 设置单元格边距
+                cellspacing 设置单元格间距
+                bgcolor 表格、单元格背景颜色
+                align 对齐方式
+        -->
+        <table width="400" border="1" cellpadding="10" cellspacing="5">
+            <caption>标题</caption>
+            <tr>
+                <th>一</th>
+                <th>二</th>
+                <th>三</th>
+            </tr>
+            <tr>
+                <td>ps/lr</td>
+                <td align="right">pr</td>
+                <td>摄影</td>
+            </tr>
+            <tr>
+                <td>魔法课</td>
+                <td>剪辑课</td>
+                <td>光影课</td>
+            </tr>
+        </table>
+
+        <table border="1" bgcolor="pink">
+            <tr>
+                <th>序号</th>
+                <th colspan="7">部门</th>
+            </tr>
+            <tr>
+                <td bgcolor="yellow">1</td>
+                <td>sjb</td>
+                <td>xcb</td>
+                <td>bgs</td>
+                <td>cbb</td>
+                <td>wbb</td>
+                <td>bpb</td>
+                <td>dspb</td>
+            </tr>
+        </table>
+        <dl>
+            <dt>
+                HTML
+            <dd>超文本标记语言</dd>
+            </dt>
+            <dt>
+                CSS
+            <dd>层叠样式表</dd>
+            </dt>
+        </dl>
+    </div>
+
+</body>
+
+</html>

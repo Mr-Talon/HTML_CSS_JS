@@ -1,0 +1,27 @@
+/* 
+    背景的其他设置
+        出现多个背景图片 不同图片的设置可以按顺序用逗号隔开
+        
+        background-size
+            1、设置长宽像素值
+            2、contain  取决于背景图像和背景定位区域的比例，可能存在一些未被背景图像覆盖的背景区域
+            3、cover  背景图像的某些部分可能在背景定位区域中不可见
+        
+        background-origin  描述背景的开始位置
+            border-box - 背景图片从边框的左上角开始
+            padding-box -背景图像从内边距边缘的左上角开始（默认）
+            content-box - 背景图片从内容的左上角开始
+        
+        background-clip  描述背景的绘制区域
+            border-box - 背景绘制到边框的外部边缘（默认）
+            padding-box - 背景绘制到内边距的外边缘
+            content-box - 在内容框中绘制背景
+        
+        全尺寸背景：
+            html方法
+*/
+html{
+     background:url(../image/未命名-0225-3.jpg) no-repeat center ;
+     background-size: cover;
+     position: relative;
+}

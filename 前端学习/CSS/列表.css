@@ -1,0 +1,31 @@
+/* 
+    css对于列表可以做：
+        list-style-type 设置标记  标记就是前面的点
+            circle  square  upper-roman  lower-alpha  none
+        list-style-image 属性将图像指定为列表项标记
+        list-style-position 属性指定列表项标记（项目符号）的位置
+            outside 符号点将在列表项之外  inside 符号将在列表项内
+        ol ul  ol li  ul li 内background属性可以设置背景颜色
+        为列表和列表项添加背景色
+*/
+.left{
+    border-left: 5px solid red;
+    list-style-type: none;
+    background-color: #f1f1f1;
+}
+ul{
+    background-color: lightcoral;
+    list-style-type: square;
+    list-style-position: outside;
+}
+ul li{
+    background-color: rgb(243, 194, 194);
+}
+ol{
+    background-color: lightskyblue;
+    list-style-type:lower-alpha;
+    list-style-position: inside;
+}
+ol li{
+    background-color: rgb(198, 233, 255);
+}

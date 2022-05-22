@@ -1,0 +1,11 @@
+/* 
+    线性渐变
+    linear-gradient(direction, color-stop1, color-stop2, ...)
+    径向渐变
+    background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+        默认地，shape 为椭圆形，size 为最远角，position 为中心。
+        不同颜色后面跟随百分数 显示不同颜色的范围
+*/
+html{
+    background: linear-gradient(to right, #2196f3, #f44336);
+}

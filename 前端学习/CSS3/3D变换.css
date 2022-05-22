@@ -1,0 +1,53 @@
+/* 
+    transform
+        rotateX()
+        rotateY()
+        rotateZ()
+
+    以下实例展示3D变换实现翻牌效果
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(243, 243, 243);
+}
+#stage{
+    width: 1200px;
+    height: 200px;
+    margin: 100px auto;
+}
+.card{
+    float: left;
+    width: 320px;
+    height: 180px;
+    margin: 10px;   
+    position: relative;
+    transform-style: preserve-3d;
+    /* 3D效果 */
+    transition: 1s;
+    /* 变换持续时间1s */
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.face{
+    width: 320px;
+    height: 180px;
+    position: absolute;
+}
+.back{
+    transform: rotateY(180deg);
+    background-color: rgba(119, 119, 119, 0.103);
+    border: none
+}
+.back h3{
+    color: rgb(245, 245, 245);
+    text-align: center;
+    line-height: 180px;
+}
+img{
+    width: 320px;
+    height: 180px;
+}

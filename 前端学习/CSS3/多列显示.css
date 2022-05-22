@@ -1,0 +1,13 @@
+/* 
+    列的基本属性：
+    column-count 属性规定元素应被划分的列数
+    column-gap 属性规定列之间的间隔
+    
+    列的分栏样式：
+    column-rule-style 属性规定列之间的规则样式
+    column-rule-width 属性规定列之间的规则宽度
+    column-rule-color 属性规定列之间的规则的颜色
+
+    在下面有列的情况下 有时候我们需要控制标题的样式
+    column-span 属性规定元素应跨越多少列
+*/

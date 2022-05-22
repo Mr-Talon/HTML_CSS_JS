@@ -1,0 +1,45 @@
+/* 
+    表格的相关属性:
+        1、表格边框 border  
+            <table>、<th> 和 <td> 
+        2、合并表格边框 border-collapse   
+            <table>
+            collapse 合并边框
+        3、宽度 高度 
+            像素 百分比
+        4、水平对齐 text-align
+            <th><td>
+            默认情况下，<th> 元素的内容居中对齐，而 <td> 元素的内容左对齐
+        5、表格内边距 padding  
+            <th>、<td>
+        6、可悬停表格 
+            在 <tr> 元素上使用 :hover 选择器，以突出显示鼠标悬停时的表格行
+      **7、奇偶选择器
+            tr:nth-child(odd/even)
+*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 8px;
+    text-align: center;
+    border:1px solid rgba(179, 179, 179, 0.596);
+}
+tr:nth-child(odd){
+    background-color: rgb(219, 219, 219);
+}
+tr:hover{
+    background-color: #cacacaa6;
+}
+th{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    height: 60px;
+    text-align: center;
+    background-color: lightcoral;
+    color: white
+}
+td{
+    height: 40px;
+}

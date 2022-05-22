@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <br />
+    <audio controls="controls">
+        <source src="../../music/BGM.mp4" type="audio/mp3" />
+        <embed height="100" width="400" src="../music/BGM.mp4" />
+    </audio>
+
+    <video width="320" height="180" controls="controls">
+        <source id="vedio" src="../../vedio/片头.mp4" type="vedio/mp4">
+        <object data="../../vedio/片头.mp4" width="320" height="180"></object>
+    </video>
+    <button id="btn1" onclick="playPauses">播放/暂停</button>
+    <script>
+        var v = document.getElementById("vedio");
+        function playPauses() {
+            if (v.paused) {
+                v.play();
+            }
+            else {
+                v.paused();
+            }
+        }
+    </script>
+</body>
+
+</html>

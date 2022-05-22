@@ -1,0 +1,41 @@
+/* 
+    媒体查询的语法：
+    @media not|only mediatype and (expressions) {
+    CSS-Code;
+    }
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: blueviolet;
+}
+/* 当页面的宽度大于480px时 背景颜色会发生改变 */
+@media screen and (min-width:480px) {
+    body{
+        background-color: burlywood;
+    }
+}
+#nav{
+    overflow: hidden;
+    background-color: black;
+}
+#nav a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); 
+    float: left;
+    padding: 14px 16px;
+}
+#nav a:hover{
+    background-color: rgb(221, 219, 219);
+    color: black;
+}
+/* 屏幕小于480px 会呈现列导航栏 大于600px 呈现行导航栏 */
+@media screen and (max-width:480px) {
+    #nav a{
+        float: none;
+        width: 100%;
+    }
+}

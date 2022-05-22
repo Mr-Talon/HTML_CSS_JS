@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+
+<body>
+    <!--
+        form 的属性：
+
+        action 属性定义在提交表单时执行的动作。 规定向何处提交表单的地址（URL）（提交页面）。
+        向服务器提交表单的通常做法是使用提交按钮。   
+        
+        属性	        描述P
+        accept-charset	规定在被提交表单中使用的字符集（默认：页面字符集）。
+        action	        规定向何处提交表单的地址（URL）（提交页面）。
+        autocomplete	规定浏览器应该自动完成表单（默认：开启）。
+            开启之后用户再次登录王炸会看到之前的输入
+            类似记住密码
+        enctype	        规定被提交数据的编码（默认：url-encoded）。
+        method	        规定在提交表单时所用的 HTTP 方法（默认：GET）。
+            POST 的安全性更好，因为在页面地址栏中被提交的数据是不可见的。
+            GET 最适合少量数据的提交。浏览器会设定容量限制。   
+            如果表单数据包含敏感信息或个人信息，请务必使用 POST
+        name	        规定识别表单的名称（对于 DOM 使用：document.forms.name）。
+        novalidate	    规定浏览器不验证表单。
+        target	        规定 action 属性中地址的目标（默认：_self）。 响应发生之后页面变化
+            值	        描述
+            _blank  	响应显示在新窗口或选项卡中。
+            _self	    响应显示在当前窗口中。
+            _parent	    响应显示在父框架中。
+            _top	    响应显示在窗口的整个 body 中。
+            framename	响应显示在命名的 iframe 中。
+     -->
+
+    <!-- 
+         表单元素input select textarea button以及用法见下：
+      -->
+    <form action="" method="GET" name=""></form>
+    <form>
+        用户名：<input type="text" value="zcr太nb了！" name="userName" />
+        <!-- 文本框 input标签 type为text value可以设置默认值 -->
+        <br />
+
+        密码：<input type="password" name="userPasserword" />
+        <!-- 密码框 input标签 type为password -->
+        <br />
+
+        <input type="submit" value="提交" name="submitBtn" />
+        <!-- 提交按钮 input标签 type为submit value设置按钮内部文字 -->
+
+        <input type="reset" value="重置" name="resetBtn" />
+        <!-- 重置按钮 input标签 type为reset value设置按钮内部文字 -->
+        <br />
+
+        zcrnb吗？：是<input type="radio" value="是" name="radioBtn" checked="checked">
+        否<input type="radio" value="否" name="radioBtn">
+        <!-- 单选框 input标签 type为radio value为提交给后端的值 checked为是否为默认选择 注：只有name属性为相同的值时才会出现只可以选一个选项-->
+        <br />
+
+        zcr的爱好：摄影：<input type="checkbox" value="摄影" name="checkbox" checked="checked">
+        编程：<input type="checkbox" value="编程" name="checkbox" checked="checked">
+        <!-- 复选框 input标签 type为checkbox value为提交给后端的值 checked为是否为默认选择-->
+        <br />
+
+        <select>
+            <option value="1" selected="selected">选项一</option>
+            <option value="2">选项二</option>
+        </select>
+        <!-- 下拉列表框 select标签 selected为列表框中默认的内容 -->
+        <br />
+
+        <p>你想说些什么吗：</p>
+        <textarea cols="30" rows="10">
+            我喜欢你么么么
+        </textarea>
+        <!-- 文本框 textarea标签 cols为列数 rows行数 -->
+        <br />
+        提交：<input type="submit" value="提交" name="submitBtn">
+        重置：<input type="reset" value="你敢" name="resetBtn">
+        <br />
+
+        <button type="button" onclick="alert('hello world!') ">
+            点我！么么么
+        </button>
+
+        <!-- 
+        HTML5 表单元素：
+
+        <datalist>
+            <datalist> 元素为 <input> 元素规定预定义选项列表。
+            用户会在他们输入数据时看到预定义选项的下拉列表。
+            <input> 元素的 list 属性必须引用 <datalist> 元素的 id 属性。
+        <keygen>
+        <output>
+     -->
+        H5表单：
+        <form action="">
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+            </datalist>
+        </form>
+    </form>
+
+    <!-- 也可以进行一些输入限制： -->
+    <form>
+        输入1~5的数字：
+        <input type="number" name="数字" min="1" max="5">
+        <!-- 
+            输入类型设置为number 然后可以对数字的最大值最小值进行限制 并且在浏览器中会出现小三角++-- 
+            更多输入限制：
+            属性	    描述
+            disabled	规定输入字段应该被禁用。
+            max	        规定输入字段的最大值。
+            maxlength	规定输入字段的最大字符数。
+            min	        规定输入字段的最小值。
+            pattern	    规定通过其检查输入值的正则表达式。
+            readonly	规定输入字段为只读（无法修改）。
+            required	规定输入字段是必需的（必需填写）。
+            size	    规定输入字段的宽度（以字符计）。
+            step	    规定输入字段的合法数字间隔。
+            value	    规定输入字段的默认值。
+         -->
+        <br />
+
+        <!-- 
+            H5新增了很多输入类型：input后面跟着的
+            color
+            date
+            datetime
+            datetime-local
+            email
+            month
+            number
+            range
+            search
+            tel
+            time
+            url
+            week
+         -->
+
+        <!-- 
+            输入日期 type为date
+            也可以通过max min对日期进行限制
+         -->
+        输入日期：
+        <input type="date" name="baby">
+        <br />
+
+        <!-- 输入颜色 -->
+        颜色：
+        <input type="color">
+        <br />
+
+        <!-- 
+            输入范围
+            显示为一个滑块 
+        -->
+        范围：
+        <input type="range" min="0" max="10">
+        <br />
+
+        <!-- 输入邮箱地址 -->
+        邮箱：
+        <input type="email">
+        <br />
+
+    </form>
+
+    <!-- 
+        input属性：
+        value属性规定输入字段的初始值
+        readonly 属性规定输入字段为只读
+        disabled 属性规定输入字段是禁用的。
+            被禁用的元素是不可用和不可点击的。
+            被禁用的元素不会被提交。
+        size 属性规定输入字段的尺寸（以字符计）
+        maxlength 属性规定输入字段允许的最大长度
+     -->
+    <!-- 
+         HTML5 为 <input> 增加了如下属性：
+        autocomplete
+        autofocus
+        form
+        formaction
+        formenctype
+        formmethod
+        formnovalidate
+        formtarget
+        height 和 width
+        list
+        min 和 max
+        multiple
+        pattern (regexp)
+        placeholder
+        required
+        step
+      -->
+
+
+</body>
+
+</html>

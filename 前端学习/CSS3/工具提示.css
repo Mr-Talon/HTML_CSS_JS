@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+}
+.tool{
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    padding: 10px;
+}
+.tool .tooltip{
+    visibility: hidden;
+    /* 帮助信息默认隐藏 */
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    /* 以下代码使得提示框出现有淡入淡出效果 */
+    opacity: 0;
+    transition: 0.5s;
+    /* 定位信息很重要 */
+    position: absolute;
+    /* 以下代码可以把提示信息定位到正下方 */
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1;
+}
+.tool:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 以下代码使得提示框带有箭头 比较玄学 */
+.tool .tooltip::after{
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent transparent  black transparent;
+}

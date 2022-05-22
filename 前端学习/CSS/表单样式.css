@@ -1,0 +1,23 @@
+input{
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px 20px ;
+    border: black solid 2px;
+    border-radius: 7px;
+}
+input:focus{
+    background-color: rgb(248, 248, 248);
+    border: black solid 3px;
+    border-radius: 7px;
+}
+/* 
+    想要添加图片在表单里可以这样：
+        background-image 属性，并将其与 background-position 属性一起设置
+*/
+select{
+    width: 200px;
+    border: 2px black solid;
+    border-radius: 7px;
+    padding: 12px 20px;
+    margin: 10px auto;
+}

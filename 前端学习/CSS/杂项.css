@@ -1,0 +1,75 @@
+/* 
+    opacity 属性的取值范围为 0.0-1.0。值越低，越透明
+    
+    伪元素可以对元素指定部分进行样式设置
+        ::first-line 伪元素用于向文本的首行添加特殊样式
+            ::first-line 伪元素只能应用于块级元素
+        ::first-letter 伪元素用于向文本的首字母添加特殊样式
+            ::first-letter 伪元素只适用于块级元素
+        ::before 伪元素可用于在元素内容之前插入一些内容
+        ::after 伪元素可用于在元素内容之后插入一些内容
+
+    圆角
+        border-top-left-radius
+        border-top-right-radius
+        border-bottom-right-radius
+        border-bottom-left-radius
+
+    阴影
+        text-shadow
+        box-shadow
+            1、水平阴影 2、垂直阴影 3、模糊范围 4、阴影颜色
+
+    文本溢出
+        text-overflow
+            clip 裁剪  ellipsis 省略号
+
+    长文本换行
+        word-wrap
+            word-wrap: break-word
+            keep-all
+    
+    字体
+        @font-face {
+            font-family: myFirstFont;         定义字体名
+            src: url(sansation_light.woff);       字体url
+        }
+
+    图片居中
+        使图像居中，请将左右外边距设置为 auto 并将其设置为块元素
+
+    object-fit 属性用于指定应如何调整 <img> 或 <video> 的大小以适合其容器
+        如果对图片的长宽进行设置 可能会破坏原有比例
+        如果图片长宽是与页面的比例对应 那么进行放大缩小的时候就会破坏原有图片比例
+        object—fit属性就很好得解决了这个问题
+        属性的值：
+            fill - 默认值。调整替换后的内容大小，以填充元素的内容框。如有必要，将拉伸或挤压物体以适应该对象。
+            contain - 缩放替换后的内容以保持其纵横比，同时将其放入元素的内容框。
+            cover - 调整替换内容的大小，以在填充元素的整个内容框时保持其长宽比。该对象将被裁剪以适应。
+            none - 不对替换的内容调整大小。
+            scale-down - 调整内容大小就像没有指定内容或包含内容一样（将导致较小的具体对象尺寸）
+
+    css变量：
+        全局变量：
+            :root {                 ：root下声明全局变量
+            --blue: #1e90ff;        变量名需要以--开头
+            --white: #ffffff;
+            }
+        全局变量的使用:
+            var（--变量名）
+        
+        当特定的部分比如 a元素中希望变量名指代其他的项目
+        局部变量：
+            在属性的css中 用--变量名：变量值   来声明 使用方法和之前相同
+*/
+div{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+img{
+    opacity: 0.5;
+}
+img:hover{
+    opacity: 1;
+}

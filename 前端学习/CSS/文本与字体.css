@@ -1,0 +1,61 @@
+/* 
+    文本与字体相关属性和取值：
+    1、文本颜色属性：
+        color属性表示方法：
+            1）颜色名 - 比如 "red"
+            2）十六进制值 - 比如 "#ff0000"
+            3）RGB 值 - 比如 "rgb(255,0,0)"
+        background-color属性表示背景颜色
+    
+    2、文本相关
+        text-align用于设置文本的水平对齐方式
+            left center right justify
+        direction 和 unicode-bidi 属性可用于更改元素的文本方向
+        vertical-align 属性设置元素的垂直对齐方式
+            top middle bottom
+        text-decoration用于文本装饰
+            none 通常用于从链接上删除下划线
+            overline line-through underline
+        text-transform 用于指定文本中的大写和小写字母
+            uppercase 大写  lowercase 小写  capitalize 首字母大写
+        text-indent 用于指定文本第一行的缩进
+            2em 缩进两个字符  50px 50个像素
+        letter-spacing 用于指定文本中字符之间的间距
+            2px  -3px
+        line-height 用于指定行之间的间距
+            1.5em  
+        text-shadow 属性为文本添加阴影
+            第一个参数 水平阴影  2 垂直阴影 3模糊效果 4阴影颜色
+    
+    3、字体相关
+        font-family 属性规定文本的字体
+            如果字体名称不止一个单词，则必须用引号引起来，例如："Times New Roman"
+            以需要的字体开始，并以通用系列结束
+        font-style 属性主要用于指定斜体文本
+            normal - 文字正常显示
+            italic - 文本以斜体显示
+        font-weight 属性指定字体的粗细
+            normal bold
+        font-size 属性设置文本的大小
+            绝对尺寸：
+                将文本设置为指定大小
+                不允许用户在所有浏览器中更改文本大小（可访问性不佳）
+                当输出的物理尺寸已知时，绝对尺寸很有用
+            相对尺寸：
+                设置相对于周围元素的大小
+                允许用户在浏览器中更改文本大小
+*/
+p{
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-indent: 2em;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    font: size 1em;;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-style: normal;
+}
